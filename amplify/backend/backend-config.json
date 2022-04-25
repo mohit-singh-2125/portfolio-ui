@@ -1,0 +1,9 @@
+{
+  "video": {
+    "liveApp": {
+      "service": "video",
+      "serviceType": "livestream",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}

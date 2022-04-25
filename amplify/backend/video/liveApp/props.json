@@ -1,0 +1,31 @@
+{
+    "mediaPackage": {
+        "endpoints": "HLS,DASH,MSS,CMAF",
+        "startOverWindow": "86400"
+    },
+    "shared": {
+        "resourceName": "liveApp"
+    },
+    "advanced": {
+        "gopSize": "1",
+        "gopPerSegment": "2",
+        "segsPerPlist": "3",
+        "advancedChoice": false
+    },
+    "mediaLive": {
+        "securityGroup": "0.0.0.0/0",
+        "ingestType": "MP4_FILE",
+        "encodingProfile": "SD",
+        "autoStart": "YES",
+        "mp4URL": ""
+    },
+    "mediaStorage": {
+        "storageType": "mPackage"
+    },
+    "cloudFront": {
+        "priceClass": "PriceClass_All",
+        "sBucketLogs": "liveaps3",
+        "sLogPrefix": "cf_logs/",
+        "enableDistribution": "YES"
+    }
+}
